@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Workflow | EcoRoute</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>EcoRoute Team Workflow</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="setup.html">Git Setup</a>
+                <a href="workflow.html">Team Workflow</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2>Getting the EcoRoute Repository</h2>
+            <pre><code>git clone https://github.com/puseriokhalil-maker/EcoRoute.git</code></pre>
+        </section>
+
+        <section>
+            <h2>Steps for Working on a Task</h2>
+
+            <ol class="workflow-steps">
+
+                <li>
+                    <strong>Switch to the main branch.</strong>
+                    <pre><code>git switch main</code></pre>
+                </li>
+
+                <li>
+                    <strong>Download the latest project updates.</strong>
+                    <pre><code>git pull origin main</code></pre>
+                </li>
+
+                <li>
+                    <strong>Create a branch for your assigned task.</strong>
+                    <pre><code>git switch -c feature-workflow</code></pre>
+                </li>
+
+                <li>
+                    <strong>Make the required changes and test your work in VS Code.</strong>
+                </li>
+
+                <li>
+                    <strong>Check your current branch and modified files.</strong>
+                    <pre><code>git branch
+git status</code></pre>
+                </li>
+
+                <li>
+                    <strong>Review the changes before committing.</strong>
+                    <pre><code>git diff</code></pre>
+                </li>
+
+                <li>
+                    <strong>Stage the completed changes.</strong>
+                    <pre><code>git add .</code></pre>
+                </li>
+
+                <li>
+                    <strong>Create a commit that describes your work.</strong>
+                    <pre><code>git commit -m "Add team workflow page"</code></pre>
+                </li>
+
+                <li>
+                    <strong>Push your feature branch to the EcoRoute repository.</strong>
+                    <pre><code>git push -u origin feature-workflow</code></pre>
+                </li>
+
+                <li>
+                    <strong>Create a pull request on GitHub.</strong>
+                </li>
+
+                <li>
+                    <strong>Have another team member review the changes before merging.</strong>
+                </li>
+
+                <li>
+                    <strong>Return to the main branch and get the latest version after the merge.</strong>
+                    <pre><code>git switch main
+git pull origin main</code></pre>
+                </li>
+
+            </ol>
+        </section>
+
+        <section class="note">
+            <h2>EcoRoute Team Rule</h2>
+            <p>
+                Always update the main branch first, create a separate feature branch,
+                complete and test your task, review the changes, commit and push your work,
+                then submit it for team review before merging it into main.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>EcoRoute - Team Workflow Guide</p>
+    </footer>
+</body>
+</html>
