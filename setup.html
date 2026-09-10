@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRoute | Git Setup</title>
+
+    <!-- Shared stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>GitHub Team Command Guide</h1>
+            <p>EcoRoute | Git Setup</p>
+
+            <!-- Navigation -->
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="setup.html" class="active">Git Setup</a>
+                <a href="workflow.html">Team Workflow</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Introduction -->
+        <section class="hero">
+            <span class="badge">SETUP</span>
+
+            <h2>Git and GitHub Setup</h2>
+
+            <p>
+                Follow the commands below to connect your local EcoRoute
+                project to the group's GitHub repository and prepare your
+                computer for team collaboration.
+            </p>
+        </section>
+
+
+        <!-- Step 1 -->
+        <section class="command-section">
+            <h2>1. Configure Your Git Identity</h2>
+
+            <p>
+                Set your name and email address before making commits.
+            </p>
+
+            <pre><code>git config --global user.name "Your Name"
+git config --global user.email "email@example.com"</code></pre>
+        </section>
+
+
+        <!-- Step 2 -->
+        <section class="command-section">
+            <h2>2. Clone the EcoRoute Repository</h2>
+
+            <p>
+                Clone the team's GitHub repository to your computer.
+            </p>
+
+            <pre><code>git clone https://github.com/puseriokhalil-maker/EcoRoute.git
+cd EcoRoute</code></pre>
+        </section>
+
+
+        <!-- Step 3 -->
+        <section class="command-section">
+            <h2>3. Check the GitHub Connection</h2>
+
+            <p>
+                Verify that your local project is connected to the correct
+                remote GitHub repository.
+            </p>
+
+            <pre><code>git remote -v</code></pre>
+
+            <p class="note">
+                The result should display:
+            </p>
+
+            <pre><code>origin  https://github.com/puseriokhalil-maker/EcoRoute.git (fetch)
+origin  https://github.com/puseriokhalil-maker/EcoRoute.git (push)</code></pre>
+        </section>
+
+
+        <!-- Step 4 -->
+        <section class="command-section">
+            <h2>4. Create Your Own Branch</h2>
+
+            <p>
+                Each member should work on a separate branch instead of
+                directly modifying the main branch.
+            </p>
+
+            <pre><code>git switch -c setup-page</code></pre>
+
+            <p class="note">
+                Replace <strong>setup-page</strong> with the name of your
+                assigned feature or task.
+            </p>
+        </section>
+
+
+        <!-- Step 5 -->
+        <section class="command-section">
+            <h2>5. Check Your Changes</h2>
+
+            <p>
+                After editing your files, use Git status to see what has
+                changed.
+            </p>
+
+            <pre><code>git status</code></pre>
+        </section>
+
+
+        <!-- Step 6 -->
+        <section class="command-section">
+            <h2>6. Stage Your Changes</h2>
+
+            <p>
+                Add your modified files to the staging area.
+            </p>
+
+            <pre><code>git add .</code></pre>
+        </section>
+
+
+        <!-- Step 7 -->
+        <section class="command-section">
+            <h2>7. Commit Your Changes</h2>
+
+            <p>
+                Create a commit with a clear message describing your work.
+            </p>
+
+            <pre><code>git commit -m "Create Git setup page"</code></pre>
+        </section>
+
+
+        <!-- Step 8 -->
+        <section class="command-section">
+            <h2>8. Push Your Branch to GitHub</h2>
+
+            <p>
+                Upload your branch to the EcoRoute GitHub repository.
+            </p>
+
+            <pre><code>git push -u origin setup-page</code></pre>
+        </section>
+
+
+        <!-- Step 9 -->
+        <section class="command-section">
+            <h2>9. Update Your Local Main Branch</h2>
+
+            <p>
+                Before starting another task, switch to the main branch
+                and download the latest changes.
+            </p>
+
+            <pre><code>git switch main
+git pull origin main</code></pre>
+        </section>
+
+
+        <!-- Pull Request -->
+        <section>
+            <h2>10. Create a Pull Request</h2>
+
+            <p>
+                After pushing your branch, open the EcoRoute repository
+                on GitHub and create a Pull Request.
+            </p>
+
+            <ol class="steps">
+                <li>Open the EcoRoute repository on GitHub.</li>
+                <li>Select your recently pushed branch.</li>
+                <li>Click <strong>Compare & pull request</strong>.</li>
+                <li>Describe the changes you made.</li>
+                <li>Ask another group member to review your work.</li>
+                <li>Merge the Pull Request after approval.</li>
+            </ol>
+        </section>
+
+
+        <!-- Complete Commands -->
+        <section class="command-section">
+            <h2>Complete Setup Example</h2>
+
+            <p>
+                The following shows the typical command sequence for a
+                team member starting work on EcoRoute.
+            </p>
+
+            <pre><code>git clone https://github.com/puseriokhalil-maker/EcoRoute.git
+
+cd EcoRoute
+
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"
+
+git switch main
+git pull origin main
+
+git switch -c feature-name
+
+git status
+git add .
+git commit -m "Describe your changes"
+
+git push -u origin feature-name</code></pre>
+        </section>
+
+
+        <!-- Repository Information -->
+        <section class="repo-box">
+            <h2>EcoRoute GitHub Repository</h2>
+
+            <p>
+                All team members should use the same remote repository:
+            </p>
+
+            <code>
+                https://github.com/puseriokhalil-maker/EcoRoute.git
+            </code>
+        </section>
+
+
+        <!-- Important Notes -->
+        <section>
+            <h2>Important Team Rules</h2>
+
+            <div class="card-grid">
+
+                <article class="card">
+                    <h3>Use Branches</h3>
+                    <p>
+                        Do not make feature changes directly on the main
+                        branch.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Pull Before Coding</h3>
+                    <p>
+                        Always update your local main branch before starting
+                        new work.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Review Before Merge</h3>
+                    <p>
+                        Pull Requests should be reviewed by another member
+                        before merging into main.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            EcoRoute Team | GitHub Team Command Guide
+        </p>
+    </footer>
+
+</body>
+</html>
