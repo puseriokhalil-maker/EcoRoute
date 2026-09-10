@@ -3,7 +3,7 @@
 ## Project Information
 - **Course:** Integrative Programming Technologies 2
 - **Week:** Week 6 - GitHub Basics and Integration
-- **Group:** [Insert Group Number & Group Name, e.g., EcoRoute]
+- **Group:** [Group 5 & EcoRoute]
 - **Section:** BSIT 3C AMG B
 - **Repository:** https://github.com/puseriokhalil-maker/EcoRoute
 
